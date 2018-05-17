@@ -2,8 +2,8 @@
 
 namespace ADOPuro.Dominio.Entidades
 {
-    public class pais
-    {        
+    public class pais : Attribute
+    {   
         public int id_pais { get; set; } // int, not null
         public string sigla { get; set; } // varchar(2), not null
         public string nome { get; set; } // varchar(80), not null

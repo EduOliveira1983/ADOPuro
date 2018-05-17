@@ -5,7 +5,7 @@ using System.Configuration;
 
 namespace ADOPuro.Infra.ADO.Util
 {
-    public class CustomizedDataAccess
+    public class CustomizedDataAccess 
     {
         private readonly string strConexao = Properties.Settings.Default.Conexao;
 
@@ -21,7 +21,7 @@ namespace ADOPuro.Infra.ADO.Util
             }
         }
 
-        public List<T> ProcessarRespostaBanco<T>(ref SqlDataReader reader)
+        private List<T> ProcessarRespostaBanco<T>(ref SqlDataReader reader)
         {            
             List<T> lstRetorno = new List<T>();
             var objeto = Activator.CreateInstance<T>();
@@ -61,7 +61,6 @@ namespace ADOPuro.Infra.ADO.Util
             if (property != null)
                 property.SetValue(objetoDestino, coluna.ValorColuna);
         }
-
        
 
         public void ExecutaEscritaNoBanco<T>(string comando, List<T> parametros, string strConexao)
