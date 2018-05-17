@@ -3,7 +3,7 @@
 namespace ADOPuro.Dominio.Entidades
 {
     public class ruas
-    {
+    {       
         public int id_rua { get; set; } // int, not null
         public string nome { get; set; } // varchar(100), not null
         public string cep { get; set; } // varchar(10), not null

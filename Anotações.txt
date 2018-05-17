@@ -2,3 +2,10 @@ Projeto de Inspiração para o Estudo
 https://github.com/gustavoferreira0701/ADO.NET-Testes
 
 Inclusão do Projeto no GITHub
+
+objeto.GetType().GetProperties()
+//foreach
+.item.Name = Nome
+
+objeto.GetType().GetProperties()[0].GetValue(objeto)
+
